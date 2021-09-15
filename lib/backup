@@ -1,0 +1,18 @@
+if (resOb.msgState == MsgState.loading) {
+                      return Center(
+                        child: CircularProgressIndicator(
+                          color: Colors.white,
+                        ),
+                      );
+                    } else if (resOb.msgState == MsgState.data) {
+                      List<CovidCountryOb> ccList = resOb.data;
+                      return MainWidget(ccList);
+                    } else {
+                      if (resOb.errState == ErrState.notFoundErr) {
+                        return Text("404 Not Found");
+                      } else if (resOb.errState == ErrState.serverErr) {
+                        return Text("500 Server Error");
+                      } else {
+                        return Text("Error, Something went Wrong");
+                      }
+                    }
