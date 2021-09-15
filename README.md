@@ -1,8 +1,12 @@
-# covid_tracker
-
-A new Flutter project.
-
-## Getting Started
+# covid_tracker App
+![5581539](https://user-images.githubusercontent.com/46857727/133473885-d0d73f06-1e41-45ab-9134-61568186b25e.jpg)
+## Requirements
+```
+  cupertino_icons: ^1.0.2
+  http: ^0.13.3
+  intl: ^0.17.0
+  pull_to_refresh: ^2.0.0
+```
 
 This project is a starting point for a Flutter application.
 
